@@ -153,6 +153,6 @@ PHP_FUNCTION(face_count)
 /* }}} */
 PHP_FUNCTION(face_model)
 {
-	php_facedetect(INTERNAL_FUNCTION_PARAM_PASSTHRU, 1);
+	php_facedetect(INTERNAL_FUNCTION_PARAM_PASSTHRU, 0);
 }
 
