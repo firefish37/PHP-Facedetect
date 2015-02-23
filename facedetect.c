@@ -31,6 +31,7 @@
 static zend_function_entry facedetect_functions[] = {
     PHP_FE(face_detect, NULL)
     PHP_FE(face_count, NULL)
+    PHP_FE(face_model, NULL)
     {NULL, NULL, NULL}
 };
 /* }}} */
@@ -150,4 +151,8 @@ PHP_FUNCTION(face_count)
 	php_facedetect(INTERNAL_FUNCTION_PARAM_PASSTHRU, 0);
 }
 /* }}} */
+PHP_FUNCTION(face_model)
+{
+	php_facedetect(INTERNAL_FUNCTION_PARAM_PASSTHRU, 1);
+}
 
